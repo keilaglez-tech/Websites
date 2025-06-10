@@ -1,0 +1,327 @@
+/* General Styles */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.2;
+  margin: 0;
+  padding: 1;
+  background-color: #f4fdfd;
+  color: #333;
+}
+
+p {
+  font-size: 16px; 
+  line-height: 1.6; 
+  margin: 15px 0; 
+  padding: 10px; 
+  color: #333; 
+  background-color: #f9f9f9; 
+  border-radius: 5px; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+}
+
+nav {
+  background-color: #00a2b1;
+  color: #fff;
+  padding: 1em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #45a089; 
+  color: #fff; 
+}
+
+header {
+  background: #fff;
+  color: #333;
+  padding: 2em 0;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #50b3a2;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  background-color: #fff; /* Set background to white */
+  padding: 18px;
+  margin-bottom: 18px;
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better visual separation */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+footer {
+  background-color: #00a2b1;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+footer nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+footer nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Special Styles */
+
+/* Zoom effect for images */
+.zoom {
+  transition: transform 0.2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.1); /* Zoom in */
+}
+
+/* Cute frame for all images */
+img {
+  border: 5px solid #d1f3f4; 
+  padding: 10px;
+  border-radius: 15px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* Styled button */
+.styled-button {
+  background-color: #50b3a2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.styled-button:hover {
+  background-color: #45a089;
+  transform: scale(1.05);
+}
+
+.styled-button:active {
+  background-color: #3e8e7e;
+  transform: scale(1);
+}
+
+/* Highlight Section */
+.highlight {
+  margin-bottom: 30px;
+}
+
+.highlight img {
+  width: 400px; 
+  height: auto;
+  border: 5px solid #dbfdfd;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.highlight p {
+  margin: 0;
+}
+
+/* Center Image */
+.center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* Image Frame */
+.image-frame img {
+  width: 99%;
+  height: auto;
+  border: 3px solid #c7f8f9;
+  padding: 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin: 5px 0;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #26f1f5;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 18px;
+  padding: 10px;
+  background-color: #50b3a2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a089;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+
+/* Responsive Design */
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  header {
+    padding: 1em 0;
+  }
+
+  .highlight img, .image-frame img {
+    width: 100%;
+    margin: 0 auto 10px;
+  }
+
+  form input, form textarea {
+    font-size: 14px;
+  }
+
+  form button {
+    font-size: 14px;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  header {
+    padding: 1.5em 0;
+  }
+
+  .highlight img, .image-frame img {
+    width: 100%;
+    margin: 0 auto 10px;
+  }
+
+  form input, form textarea {
+    font-size: 16px;
+  }
+
+  form button {
+    font-size: 16px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+  body {
+    font-size: 18px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  header {
+    padding: 2em 0;
+  }
+
+  .highlight img, .image-frame img {
+    width: 400px;
+    margin: 0 auto 10px;
+  }
+
+  form input, form textarea {
+    font-size: 18px;
+  }
+
+  form button {
+    font-size: 18px;
+  }
+}
